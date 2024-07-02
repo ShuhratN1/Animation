@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 0, 0);
+    margin: 180px auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 10s;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    transition: all 3s;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    transition: all 3s;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    transition: all 3s;
+}
+
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: darkgreen;
+    border-radius: 20px;
+    position: absolute;
+    bottom: -50px;
+    left: -50px;
+    transition: all 3s;
+}
+
+.container>div{
+    transition: all 5s;
+}
+
+.container:hover>div{
+    background-color: blue;
+    transform: rotate(36000deg);
+    transition: all 5s;
+}
